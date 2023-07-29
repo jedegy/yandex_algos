@@ -22,28 +22,14 @@ Removing an element from the front or back of the deque also takes O(1) time sin
 The `Deque` class uses a dynamically allocated array to store elements, and its size is equal to the maximum size of the deque.
 As a result, the space complexity of the class is O(max_deq_size), where max_deq_size is the maximum size of the deque.
 
-Successfully report: https://contest.yandex.ru/contest/22781/run-report/89326715/
+Successfully report: https://contest.yandex.ru/contest/22781/run-report/89341703/
 */
 
 #include <iostream>
 #include <sstream>
-#include <utility>
+#include <optional>
 #include <vector>
-
-// Custom exception class to represent an empty deque
-class EmptyDeque : public std::exception
-{
-public:
-    explicit EmptyDeque(std::string  message) : errorMessage(std::move(message)) {}
-
-    const char* what() const noexcept override
-    {
-        return errorMessage.c_str();
-    }
-
-private:
-    std::string errorMessage;
-};
+#include <iterator>
 
 // Template class for implementing a Deque (Double-Ended Queue)
 template <typename T>
@@ -52,27 +38,26 @@ private:
     // Pointer to dynamically allocated array to store deque elements
     T *data = nullptr;
     // Maximum size of the deque
-    int max_deq_size;
+    int max_deq_size = 0;
     // Index of the front element
-    int head_id;
+    int head_id = 0;
     // Index of the back element
-    int tail_id;
     // Current size of the deque
-    int size;
+    int size = 0;
 
     // Helper function to check if the deque is empty
-    bool is_empty() const {
+    [[nodiscard]] bool is_empty() const {
         return size == 0;
     }
 
     // Helper function to check if the deque is full
-    bool is_full() const {
+    [[nodiscard]] bool is_full() const {
         return size == max_deq_size;
     }
 
 public:
     // Constructor: creates a deque with the specified maximum size
-    explicit Deque(int max_deq_size) : max_deq_size(max_deq_size), head_id(0), tail_id(0), size(0) {
+    explicit Deque(int max_deq_size) : max_deq_size(max_deq_size), head_id(0), size(0) {
         // Allocate memory for deque elements
         data = new T[max_deq_size];
     }
@@ -86,11 +71,11 @@ public:
     // Add an element to the front of the deque
     //
     // Return:
-    // 0 - indicate a successful operation
-    // -1 - if the deque is full and the operation cannot be performed
-    int push_front(const T &value) {
+    // false - indicate a successful operation
+    // true - if the deque is full and the operation cannot be performed
+    bool push_front(const T &value) {
         if (is_full()) {
-            return -1;
+            return true;
         }
 
         // Store the value at the front index and adjust the size
@@ -98,32 +83,31 @@ public:
         data[head_id] = value;
         size++;
 
-        return 0;
+        return false;
     }
 
     // Add an element to the back of the deque
     //
     // Return:
-    // 0 - indicate a successful operation
-    // -1 - if the deque is full and the operation cannot be performed
-    int push_back(const T &value) {
+    // false - indicate a successful operation
+    // true - if the deque is full and the operation cannot be performed
+    bool push_back(const T &value) {
         if (is_full()) {
-            return -1;
+            return true;
         }
 
         // Store the value at the back index and adjust the size
-        data[tail_id] = value;
-        tail_id = (tail_id + 1) % max_deq_size;
+        data[(head_id + size) % max_deq_size] = value;
         size++;
 
-        return 0;
+        return false;
     }
 
     // Remove and return the front element of the deque
-    T pop_front() {
+    std::optional<T> pop_front() {
         if (is_empty()) {
-            // Throw an EmptyDeque exception if the deque is empty
-            throw EmptyDeque("error");
+            // Return an empty if the deque is empty
+            return {};
         }
 
         // Get the front element, adjust the index, and decrease the size
@@ -135,15 +119,14 @@ public:
     }
 
     // Remove and return the back element of the deque
-    T pop_back() {
+    std::optional<T> pop_back() {
         if (is_empty()) {
-            // Throw an EmptyDeque exception if the deque is empty
-            throw EmptyDeque("error");
+            // Return an empty if the deque is empty
+            return {};
         }
 
         // Get the back element, adjust the index, and decrease the size
-        T result = data[(tail_id - 1 + max_deq_size) % max_deq_size];
-        tail_id = (tail_id - 1 + max_deq_size) % max_deq_size;
+        T result = data[(head_id + size - 1) % max_deq_size];
         size--;
 
         return result;
@@ -165,14 +148,8 @@ int main() {
     // Process each command
     for (int i = 0; i < n; i++) {
         getline(std::cin, command);
-        std::vector<std::string> parts;
         std::istringstream iss(command);
-        std::string part;
-
-        // Split the command into parts
-        while (iss >> part) {
-            parts.push_back(part);
-        }
+        std::vector<std::string> parts(std::istream_iterator<std::string>{iss}, std::istream_iterator<std::string>{});
 
         // Perform the corresponding operation based on the command
         if (parts[0] == "push_back") {
@@ -186,16 +163,18 @@ int main() {
                 std::cout << "error" << std::endl;
             }
         } else if (parts[0] == "pop_front") {
-            try {
-                std::cout << queue.pop_front() << std::endl;
-            } catch (const EmptyDeque &ex) {
-                std::cout << ex.what() << std::endl;
+            auto value = queue.pop_front();
+            if (value.has_value()) {
+                std::cout << value.value() << std::endl;
+            } else {
+                std::cout << "error" << std::endl;
             }
         } else if (parts[0] == "pop_back") {
-            try {
-                std::cout << queue.pop_back() << std::endl;
-            } catch (const EmptyDeque &ex) {
-                std::cout << ex.what() << std::endl;
+            auto value = queue.pop_back();
+            if (value.has_value()) {
+                std::cout << value.value() << std::endl;
+            } else {
+                std::cout << "error" << std::endl;
             }
         }
     }

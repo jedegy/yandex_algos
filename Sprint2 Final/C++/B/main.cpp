@@ -28,7 +28,7 @@ The time complexity of the issue_operation function is O(1) as it performs simpl
 The space complexity of the program is O(n) due to the use of a stack to store operands during the evaluation.
 In the worst case, the stack may hold all the operands from the input expression.
 
-Successfully report: https://contest.yandex.ru/contest/22781/run-report/89327445/
+Successfully report: https://contest.yandex.ru/contest/22781/run-report/89342397/
 */
 #include <iostream>
 #include <stack>
@@ -68,7 +68,7 @@ int calculate(const std::string& expression) {
 
     // Process each token in the input expression
     while (iss >> token) {
-        if (token != "+" && token != "-" && token != "*" && token != "/") {
+        if (std::isdigit(*(token.end() - 1))) {
             // If the token is an operand, push it to the stack after converting to an integer
             operands.push(std::stoi(token));
         } else {
