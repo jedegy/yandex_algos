@@ -4,34 +4,34 @@ project(Yandex)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(Sprint1_A
-        Sprint1/C++/A/main.cpp)
+        Sprint1/A/C++/main.cpp)
 add_executable(Sprint1_B
-        Sprint1/C++/B/main.cpp)
+        Sprint1/B/C++/main.cpp)
 add_executable(Sprint1_C
-        Sprint1/C++/C/main.cpp)
+        Sprint1/C/C++/main.cpp)
 add_executable(Sprint1_D
-        Sprint1/C++/D/main.cpp)
+        Sprint1/D/C++/main.cpp)
 add_executable(Sprint1_E
-        Sprint1/C++/E/main.cpp)
+        Sprint1/E/C++/main.cpp)
 add_executable(Sprint1_F
-        Sprint1/C++/F/main.cpp)
+        Sprint1/F/C++/main.cpp)
 add_executable(Sprint1_G
-        Sprint1/C++/G/main.cpp)
+        Sprint1/G/C++/main.cpp)
 add_executable(Sprint1_H
-        Sprint1/C++/H/main.cpp)
+        Sprint1/H/C++/main.cpp)
 add_executable(Sprint1_I
-        Sprint1/C++/I/main.cpp)
+        Sprint1/I/C++/main.cpp)
 add_executable(Sprint1_J
-        Sprint1/C++/J/main.cpp)
+        Sprint1/J/C++/main.cpp)
 add_executable(Sprint1_K
-        Sprint1/C++/K/main.cpp)
+        Sprint1/K/C++/main.cpp)
 add_executable(Sprint1_L
-        Sprint1/C++/L/main.cpp)
+        Sprint1/L/C++/main.cpp)
 
 add_executable(Sprint1_Final_A
-        "Sprint1 Final/C++/A/main.cpp")
+        "Sprint1 Final/A/C++/main.cpp")
 add_executable(Sprint1_Final_B
-        "Sprint1 Final/C++/B/main.cpp")
+        "Sprint1 Final/B/C++/main.cpp")
 
 add_executable(Sprint2_A
         Sprint2/C++/A/main.cpp)
