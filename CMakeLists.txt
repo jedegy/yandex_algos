@@ -34,31 +34,31 @@ add_executable(Sprint1_Final_B
         "Sprint1 Final/B/C++/main.cpp")
 
 add_executable(Sprint2_A
-        Sprint2/C++/A/main.cpp)
+        Sprint2/A/C++/main.cpp)
 add_executable(Sprint2_B
-        Sprint2/C++/B/main.cpp)
+        Sprint2/B/C++/main.cpp)
 add_executable(Sprint2_C
-        Sprint2/C++/C/main.cpp)
+        Sprint2/C/C++/main.cpp)
 add_executable(Sprint2_D
-        Sprint2/C++/D/main.cpp)
+        Sprint2/D/C++/main.cpp)
 add_executable(Sprint2_E
-        Sprint2/C++/E/main.cpp)
+        Sprint2/E/C++/main.cpp)
 add_executable(Sprint2_F
-        Sprint2/C++/F/main.cpp)
+        Sprint2/F/C++/main.cpp)
 add_executable(Sprint2_G
-        Sprint2/C++/G/main.cpp)
+        Sprint2/G/C++/main.cpp)
 add_executable(Sprint2_H
-        Sprint2/C++/H/main.cpp)
+        Sprint2/H/C++/main.cpp)
 add_executable(Sprint2_I
-        Sprint2/C++/I/main.cpp)
+        Sprint2/I/C++/main.cpp)
 add_executable(Sprint2_J
-        Sprint2/C++/J/main.cpp)
+        Sprint2/J/C++/main.cpp)
 add_executable(Sprint2_K
-        Sprint2/C++/K/main.cpp)
+        Sprint2/K/C++/main.cpp)
 add_executable(Sprint2_L
-        Sprint2/C++/L/main.cpp)
+        Sprint2/L/C++/main.cpp)
 
 add_executable(Sprint2_Final_A
-        "Sprint2 Final/C++/A/main.cpp")
+        "Sprint2 Final/A/C++/main.cpp")
 add_executable(Sprint2_Final_B
-        "Sprint2 Final/C++/B/main.cpp")
+        "Sprint2 Final/B/C++/main.cpp")
