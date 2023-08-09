@@ -17,7 +17,7 @@ int main() {
 
     for (unsigned int i = 0; i < 26; i++) {
         if (alphabet[i] % 2 != 0) {
-            std::cout << (char)(i + 'a') << std::endl;
+            std::cout << (char) (i + 'a') << std::endl;
             break;
         }
     }

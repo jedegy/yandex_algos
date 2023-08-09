@@ -5,7 +5,7 @@
 
 int main() {
     int l;
-    std::cin>>l;
+    std::cin >> l;
     std::cin.ignore();
 
     std::string line;
@@ -25,8 +25,8 @@ int main() {
         }
     }
 
-    std::cout<<max_len_word<<std::endl;
-    std::cout<<max_len<<std::endl;
+    std::cout << max_len_word << std::endl;
+    std::cout << max_len << std::endl;
 
     return 0;
 }

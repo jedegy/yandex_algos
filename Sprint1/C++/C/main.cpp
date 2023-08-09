@@ -3,25 +3,23 @@
 #include <vector>
 #include "algorithm"
 
-using namespace std;
-
 int main() {
-    int n,m;
+    int n, m;
 
-    cin>>n;
-    cin>>m;
+    std::cin >> n;
+    std::cin >> m;
 
-    vector<vector<int>> matrix(n, vector<int>(m));
-    vector<int> neighbors;
+    std::vector<std::vector<int>> matrix(n, std::vector<int>(m));
+    std::vector<int> neighbors;
 
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
-            cin >> matrix[i][j];
+            std::cin >> matrix[i][j];
         }
     }
 
     int row, col;
-    cin >> row >> col;
+    std::cin >> row >> col;
 
     if (col - 1 >= 0) {
         neighbors.push_back(matrix[row][col - 1]);
@@ -38,10 +36,10 @@ int main() {
 
     std::sort(neighbors.begin(), neighbors.end());
 
-    for (int neighbor : neighbors) {
-        cout << neighbor << " ";
+    for (int neighbor: neighbors) {
+        std::cout << neighbor << " ";
     }
-    cout << endl;
+    std::cout << std::endl;
 
     return 0;
 }

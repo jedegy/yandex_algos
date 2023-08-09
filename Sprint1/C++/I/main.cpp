@@ -16,9 +16,9 @@ int main() {
     int n;
     std::cin >> n;
     if (is_four_degree(n)) {
-        std::cout<<"True"<<std::endl;
+        std::cout << "True" << std::endl;
     } else {
-        std::cout<<"False"<<std::endl;
+        std::cout << "False" << std::endl;
     }
 
     return 0;

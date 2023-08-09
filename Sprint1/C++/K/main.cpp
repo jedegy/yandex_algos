@@ -6,13 +6,13 @@ std::vector<short> to_list_form(unsigned int n) {
     std::vector<short> result;
 
     while (n != 0) {
-        result.push_back((short)(n % 10));
+        result.push_back((short) (n % 10));
         n /= 10;
     }
 
     std::vector<short> result_rev;
 
-    for (int i = (int)result.size() - 1; i >= 0; i--) {
+    for (int i = (int) result.size() - 1; i >= 0; i--) {
         result_rev.push_back(result[i]);
     }
 

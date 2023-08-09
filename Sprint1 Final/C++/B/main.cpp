@@ -11,8 +11,8 @@ int game_score(short k, std::vector<std::string>& field) {
     std::vector<int> counts(MAX_GAME_NUMBER + 1, 0);
     int score = 0;
 
-    for (std::string& row : field) {
-        for (char val : row) {
+    for (std::string &row: field) {
+        for (char val: row) {
             if (val >= '1' && val <= '9') {
                 counts[val - '0']++;
             }

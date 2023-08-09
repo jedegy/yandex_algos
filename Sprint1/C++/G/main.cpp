@@ -14,6 +14,6 @@ std::string dec_to_bin(int n) {
 
 int main() {
     int n;
-    std::cin>>n;
-    std::cout<<dec_to_bin(n)<<std::endl;
+    std::cin >> n;
+    std::cout << dec_to_bin(n) << std::endl;
 }

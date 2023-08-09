@@ -31,9 +31,9 @@ int main() {
     std::getline(std::cin, phrase);
 
     if (is_palindrome(phrase)) {
-        std::cout<<"True"<<std::endl;
+        std::cout << "True" << std::endl;
     } else {
-        std::cout<<"False"<<std::endl;
+        std::cout << "False" << std::endl;
     }
 
     return 0;

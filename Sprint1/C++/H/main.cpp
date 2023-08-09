@@ -37,9 +37,9 @@ std::string bin_summ(std::string& num1, std::string& num2) {
 int main() {
     std::string num1, num2;
 
-    std::cin>> num1;
-    std::cin>> num2;
+    std::cin >> num1;
+    std::cin >> num2;
 
-    std::cout<<bin_summ(num1, num2)<<std::endl;
+    std::cout << bin_summ(num1, num2) << std::endl;
     return 0;
 }

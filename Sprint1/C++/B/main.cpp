@@ -1,8 +1,6 @@
 // https://contest.yandex.ru/contest/22449/problems/B/
 #include <iostream>
 
-using namespace std;
-
 bool hasSameParity(int num1, int num2, int num3) {
     bool num1_is_even = num1 % 2 == 0;
     bool num2_is_even = num2 % 2 == 0;
@@ -18,12 +16,12 @@ bool hasSameParity(int num1, int num2, int num3) {
 int main() {
     int num1, num2, num3;
 
-    cin >> num1>> num2>> num3;
+    std::cin >> num1 >> num2 >> num3;
 
     if (hasSameParity(num1, num2, num3)) {
-        cout << "WIN" << endl;
+        std::cout << "WIN" << std::endl;
     } else {
-        cout << "FAIL" << endl;
+        std::cout << "FAIL" << std::endl;
     }
 
     return 0;
