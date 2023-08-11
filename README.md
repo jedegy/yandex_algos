@@ -155,3 +155,19 @@
 - [ ] [P. Частичная сортировка](Sprint3/P/Rust)
     </details>
 </details>
+
+<details>
+  <summary>Финальные задачи</summary>
+    <details>
+        <summary>C++</summary>
+
+- [x] [A. Поиск в сломанном массиве](Sprint3%20Final/A/C++)
+- [x] [B. Эффективная быстрая сортировка](Sprint3%20Final/B/C++)
+    </details>
+    <details>
+        <summary>Rust</summary>
+
+- [x] [A. Поиск в сломанном массиве](Sprint3%20Final/A/Rust)
+- [x] [B. Эффективная быстрая сортировка](Sprint3%20Final/B/Rust)
+    </details>
+</details>

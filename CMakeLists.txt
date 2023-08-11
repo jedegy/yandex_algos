@@ -95,3 +95,8 @@ add_executable(Sprint3_O
         "Sprint3/O/C++/main.cpp")
 add_executable(Sprint3_P
         "Sprint3/P/C++/main.cpp")
+
+add_executable(Sprint3_Final_A
+        "Sprint3 Final/A/C++/main.cpp")
+add_executable(Sprint3_Final_B
+        "Sprint3 Final/B/C++/main.cpp")
