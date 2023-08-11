@@ -14,9 +14,10 @@ It provides efficient and correct ordering of elements without consuming O(n) ad
 The average time complexity of quicksort is O(n log n), but in the worst case it can be as high as O(n^2), depending on the choice of pivot.
 
 -- SPACE COMPLEXITY --
-Since the in-place quicksort method is used, no additional memory is required and the space complexity is O(1).
+Because it uses an in-place quicksort method that uses a recursive algorithm, so (O(n) * stack frame size) will be used in the worst case and
+(O(log n) * stack frame size) will be used on average.
 
-Successfully report: https://contest.yandex.ru/contest/23815/run-report/89577416/
+Successfully report: https://contest.yandex.ru/contest/23815/run-report/89592846/
  */
 #include <iostream>
 #include <string>
@@ -25,7 +26,7 @@ Successfully report: https://contest.yandex.ru/contest/23815/run-report/89577416
 #include <tuple>
 
 // Defining a Participant type that represents a contestant
-using Participant = std::tuple<std::string, int, int>;
+using Participant = std::tuple<int, int, std::string>;
 // Defining an iterator for a member list
 using Iterator = std::vector<Participant>::iterator;
 // Comparison function definition
@@ -33,9 +34,7 @@ using Comparator = const std::function<bool(const Participant&, const Participan
 
 // Function to compare two participants
 bool compare(const Participant& a, const Participant& b) {
-    if (std::get<1>(a) != std::get<1>(b)) return std::get<1>(a) > std::get<1>(b);
-    if (std::get<2>(a) != std::get<2>(b)) return std::get<2>(a) < std::get<2>(b);
-    return std::get<0>(a) < std::get<0>(b);
+    return a < b;
 }
 
 // Implementation of partition function for quick sort
@@ -78,12 +77,16 @@ int main() {
     std::vector<Participant> participants(n);
 
     for (auto &p: participants) {
-        std::cin >> std::get<0>(p) >> std::get<1>(p) >> std::get<2>(p);
+        std::string name;
+        int score1, score2;
+        std::cin >> name >> score1 >> score2;
+        // Invert value and make tuple to use standard tuple comparison
+        p = std::make_tuple(-score1, score2, name);
     }
 
     quick_sort_in_place(participants.begin(), participants.end(), compare);
 
     for (const auto &p: participants) {
-        std::cout << std::get<0>(p) << std::endl;
+        std::cout << std::get<2>(p) << std::endl;
     }
 }

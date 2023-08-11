@@ -14,7 +14,8 @@ It provides efficient and correct ordering of elements without consuming O(n) ad
 The average time complexity of quicksort is O(n log n), but in the worst case it can be as high as O(n^2), depending on the choice of pivot.
 
 -- SPACE COMPLEXITY --
-Since the in-place quicksort method is used, no additional memory is required and the space complexity is O(1).
+Because it uses an in-place quicksort method that uses a recursive algorithm, so (O(n) * stack frame size) will be used in the worst case and
+(O(log n) * stack frame size) will be used on average.
  */
 
 use std::io::BufRead as _;
