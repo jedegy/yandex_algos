@@ -171,3 +171,37 @@
 - [x] [B. Эффективная быстрая сортировка](Sprint3%20Final/B/Rust)
     </details>
 </details>
+
+#### Спринт 4. Хеш-функции и хеш-таблицы
+
+<details>
+  <summary>Практические задачи</summary>
+    <details>
+        <summary>C++</summary>
+
+- [x] [A. Полиномиальный хеш](Sprint4/A/C++)
+- [x] [B. Сломай меня](Sprint4/B/C++)
+- [x] [C. Префиксные хеши](Sprint4/C/C++)
+- [x] [D. Кружки](Sprint4/D/C++)
+- [x] [E. Подстроки](Sprint4/E/C++)
+- [x] [F. Анаграммная группировка](Sprint4/F/C++)
+- [x] [G. Соревнование](Sprint4/G/C++)
+- [x] [H. Странное сравнение](Sprint4/H/C++)
+- [x] [I. Общий подмассив](Sprint4/I/C++)
+- [x] [J. Сумма четвёрок](Sprint4/J/C++)
+    </details>
+    <details>
+        <summary>Rust</summary>
+
+- [x] [A. Полиномиальный хеш](Sprint4/A/Rust)
+- [x] [B. Сломай меня](Sprint4/B/Rust)
+- [x] [C. Префиксные хеши](Sprint4/C/Rust)
+- [x] [D. Кружки](Sprint4/D/Rust)
+- [x] [E. Подстроки](Sprint4/E/Rust)
+- [x] [F. Анаграммная группировка](Sprint4/F/Rust)
+- [x] [G. Соревнование](Sprint4/G/Rust)
+- [x] [H. Странное сравнение](Sprint4/H/Rust)
+- [x] [I. Общий подмассив](Sprint4/I/Rust)
+- [x] [J. Сумма четвёрок](Sprint4/J/Rust)
+  </details>
+</details>
