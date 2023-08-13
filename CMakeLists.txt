@@ -100,3 +100,24 @@ add_executable(Sprint3_Final_A
         "Sprint3 Final/A/C++/main.cpp")
 add_executable(Sprint3_Final_B
         "Sprint3 Final/B/C++/main.cpp")
+
+add_executable(Sprint4_A
+        Sprint4/A/C++/main.cpp)
+add_executable(Sprint4_B
+        Sprint4/B/C++/main.cpp)
+add_executable(Sprint4_C
+        Sprint4/C/C++/main.cpp)
+add_executable(Sprint4_D
+        Sprint4/D/C++/main.cpp)
+add_executable(Sprint4_E
+        Sprint4/E/C++/main.cpp)
+add_executable(Sprint4_F
+        Sprint4/F/C++/main.cpp)
+add_executable(Sprint4_G
+        Sprint4/G/C++/main.cpp)
+add_executable(Sprint4_H
+        Sprint4/H/C++/main.cpp)
+add_executable(Sprint4_I
+        Sprint4/I/C++/main.cpp)
+add_executable(Sprint4_J
+        Sprint4/J/C++/main.cpp)
