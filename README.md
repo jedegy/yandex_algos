@@ -209,3 +209,19 @@
 - [x] [L. МногоГоша](Sprint4/L/Rust)
   </details>
 </details>
+
+<details>
+  <summary>Финальные задачи</summary>
+    <details>
+        <summary>C++</summary>
+
+- [x] [A. Поисковая система](Sprint4%20Final/A/C++)
+- [x] [B. Хеш-таблица](Sprint4%20Final/B/C++)
+    </details>
+    <details>
+        <summary>Rust</summary>
+
+- [x] [A. Поисковая система](Sprint4%20Final/A/Rust)
+- [x] [B. Хеш-таблица](Sprint4%20Final/B/Rust)
+    </details>
+</details>

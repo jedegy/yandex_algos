@@ -125,3 +125,8 @@ add_executable(Sprint4_K
         Sprint4/K/C++/main.cpp)
 add_executable(Sprint4_L
         Sprint4/L/C++/main.cpp)
+
+add_executable(Sprint4_Final_A
+        "Sprint4 Final/A/C++/main.cpp")
+add_executable(Sprint4_Final_B
+        "Sprint4 Final/B/C++/main.cpp")
