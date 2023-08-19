@@ -189,6 +189,8 @@
 - [x] [H. Странное сравнение](Sprint4/H/C++)
 - [x] [I. Общий подмассив](Sprint4/I/C++)
 - [x] [J. Сумма четвёрок](Sprint4/J/C++)
+- [x] [K. Ближайшая остановка](Sprint4/K/C++)
+- [x] [L. МногоГоша](Sprint4/L/C++)
     </details>
     <details>
         <summary>Rust</summary>
@@ -203,5 +205,7 @@
 - [x] [H. Странное сравнение](Sprint4/H/Rust)
 - [x] [I. Общий подмассив](Sprint4/I/Rust)
 - [x] [J. Сумма четвёрок](Sprint4/J/Rust)
+- [x] [K. Ближайшая остановка](Sprint4/K/Rust)
+- [x] [L. МногоГоша](Sprint4/L/Rust)
   </details>
 </details>
