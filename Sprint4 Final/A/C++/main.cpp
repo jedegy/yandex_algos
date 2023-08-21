@@ -13,19 +13,15 @@ The search engine returns the document IDs sorted by their relevance.
 
 -- TIME COMPLEXITY --
 1. The average time complexity for processing each document is `O(N)` where `N` is the number of words in the document.
-2. The average time complexity for processing a query is `O(Q + K * log(K))` where `Q` is the number of words in the query
- and `K` is the number of documents returned by the query.
-The sort operation is the most time-consuming step in processing a query and has a time complexity of O(k * log(k)),
- where k is the number of documents returned by the query.
+2. The average time complexity for processing a query is `O(Q)` where `Q` is the number of words in the query.
 3. Hash map operations take on average O(1).
 
 -- SPACE COMPLEXITY --
-The space complexity of the program is O(d * m) where d is the number of documents and m is the average number of unique
- words in a document.
+The space complexity of the program is O(M) where M is the average number of unique words in a document.
 This is because each document's words are stored in a hash map, and an index is maintained that maps words to document
  IDs and their occurrence counts.
 
-Link to successful report: https://contest.yandex.ru/contest/24414/run-report/89726754/
+Link to successful report: https://contest.yandex.ru/contest/24414/run-report/89754639/
 */
 #include <iostream>
 #include <vector>
@@ -35,26 +31,9 @@ Link to successful report: https://contest.yandex.ru/contest/24414/run-report/89
 #include <unordered_map>
 #include <unordered_set>
 #include <set>
+#include <iterator>
 
 using namespace std;
-
-// Class representing a document, with its words and their occurrence counts.
-class Document {
-private:
-    // Map of words and their occurrence counts
-    unordered_map<string, int> words;
-
-public:
-    // Increment the occurrence count of a word in the document.
-    void add_word(const string &word) {
-        words[word]++;
-    }
-
-    // Get the occurrence counts of all words in the document.
-    const unordered_map<string, int>& get_words() const {
-        return words;
-    }
-};
 
 // Structure representing relevance information of a document.
 struct Relevance {
@@ -78,34 +57,22 @@ struct Relevance {
 // Class representing a search engine, with documents and an index.
 class SearchEngine {
 private:
-    // Vector of documents
-    vector<Document> docs;
     // Index map of words to document IDs and occurrence counts
     unordered_map<string, set<pair<int, int>>> index;
-
-    // Static helper function to split a string into words by whitespace.
-    static vector<string> split_whitespace(const string &s) {
-        istringstream iss(s);
-        vector<string> words;
-        string word;
-        while (iss >> word) {
-            words.push_back(word);
-        }
-        return words;
-    }
-
 public:
-    // Constructor taking the number of documents as input.
-    explicit SearchEngine(int n) : docs(n) {}
-
     // Process a document, add its words and update the index.
     void process_document(int id, const string &text) {
-        vector<string> words = split_whitespace(text);
-        for (const auto &word: words) {
-            docs[id-1].add_word(word);
+        istringstream iss(text);
+        istream_iterator<string> start(iss);
+        istream_iterator<string> end;
+
+        unordered_map<string, int> word_count;
+
+        while (start != end) {
+            word_count[*start]++;
+            start++;
         }
 
-        const unordered_map<string, int>& word_count = docs[id-1].get_words();
         for (const auto& wc: word_count) {
             index[wc.first].emplace(id, wc.second);
         }
@@ -113,8 +80,16 @@ public:
 
     // Process a query, calculate relevance and output the top results.
     void process_query(const string &query) const {
-        vector<string> query_words_vec = split_whitespace(query);
-        unordered_set<string> query_words(query_words_vec.begin(), query_words_vec.end());
+        istringstream iss(query);
+        istream_iterator<string> start(iss);
+        istream_iterator<string> end;
+
+        unordered_set<string> query_words;
+
+        while (start != end) {
+            query_words.insert(*start);
+            start++;
+        }
 
         unordered_map<int, int> relevance;
         for (const auto &word: query_words) {
@@ -130,7 +105,8 @@ public:
         for (const auto &rel: relevance) {
             relevance_vec.emplace_back(rel.first, rel.second);
         }
-        sort(relevance_vec.begin(), relevance_vec.end(), Relevance::compare);
+        partial_sort(relevance_vec.begin(), relevance_vec.begin() + min(5, static_cast<int>(relevance_vec.size())),
+                     relevance_vec.end(), Relevance::compare);
 
         for (int i = 0; i < min(5, static_cast<int>(relevance_vec.size())); ++i) {
             cout << relevance_vec[i].doc_id << " ";
@@ -144,7 +120,7 @@ int main() {
     cin >> n;
     cin.ignore();
 
-    SearchEngine searchEngine(n);
+    SearchEngine searchEngine;
     for (int i = 1; i <= n; ++i) {
         string line;
         getline(cin, line);

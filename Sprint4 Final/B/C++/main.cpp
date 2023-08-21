@@ -25,7 +25,7 @@ The space complexity of the program is `O(n)`, where n is the size of the hash t
 to store the entries, and the size of this vector determines the maximum number of entries that the hash table can hold.
 The actual space used depends on the number of entries inserted into the hash table, but it will never exceed the size of the vector.
 
-Link to successful report: https://contest.yandex.ru/contest/24414/run-report/89727847/
+Link to successful report: Link to successful report: https://contest.yandex.ru/contest/24414/run-report/89770066/
 */
 #include <iostream>
 #include <vector>
@@ -37,12 +37,13 @@ const int TABLE_SIZE = 1000003;
 template <typename K, typename T>
 struct Entry {
     // The key of the entry
-    K key;
+    K key = K();
     // The value associated with the key
-    T value;
+    T value = T();
     // Indicates whether the entry has been deleted
-    bool deleted;
-    Entry() : key(K()), value(T()), deleted(false) {}
+    bool deleted = false;
+    // Indicates whether the key is empty
+    bool is_key_empty = true;
 };
 
 template <typename K, typename T>
@@ -55,76 +56,60 @@ private:
         return std::hash<K>{}(key) % TABLE_SIZE;
     }
 
-    // Checks if a given key is considered empty.
-    bool is_empty_key(K key) {
-        return key == K();
-    }
-
     // Computes the next index for quadratic probing.
     int next_probe(int init_idx, int i) {
         return (init_idx + i * i) % TABLE_SIZE;
     }
-    
+
+    // Look for the key in the hash table using quadratic probing
+    int find_index(K key) {
+        int idx = hash(key);
+        int i = 1;
+        int init_idx = idx;
+
+        // Find an index to insert or update the key-value pair.
+        // Uses quadratic probing to resolve collisions.
+        while (!table[idx].is_key_empty) {
+            if (!table[idx].deleted && table[idx].key == key) {
+                return idx;
+            }
+            idx = next_probe(init_idx, i);
+            i++;
+        }
+
+        // Return index of the first empty slot
+        return idx;
+    }
+
 public:
     HashTable() : table(TABLE_SIZE) {}
 
     // Inserts or updates a key-value pair into the hash table.
     void put(K key, T value) {
-        int idx = hash(key);
-        int init_idx = idx;
-        int i = 1;
-
-        // Find an index to insert or update the key-value pair.
-        // Uses quadratic probing to resolve collisions.
-        while (!is_empty_key(table[idx].key) && table[idx].key != key && !table[idx].deleted) {
-            idx = next_probe(init_idx, i);
-            i++;
-        }
+        auto idx = find_index(key);
 
         // Insert or update the key-value pair at the found index
         table[idx].key = key;
+        table[idx].is_key_empty = false;
         table[idx].value = value;
         table[idx].deleted = false;
     }
 
     // Retrieves the value associated with a given key, if it exists.
-    std::optional<T> get(int key) {
-        int idx = hash(key);
-        int init_idx = idx;
-        int i = 1;
-
-        // Look for the key in the hash table using quadratic probing
-        while (!is_empty_key(table[idx].key)) {
-            if (!table[idx].deleted && table[idx].key == key) {
-                return table[idx].value;
-            }
-            idx = next_probe(init_idx, i);
-            i++;
-        }
-
-        // Return an empty optional if the key is not found
-        return {};
+    std::optional<T> get(K key) {
+        auto idx = find_index(key);
+        return !table[idx].is_key_empty ? [&]{
+            return std::optional<T>{table[idx].value};
+        }() : std::nullopt;
     }
 
     // Removes a key-value pair from the hash table, if it exists.
-    std::optional<T> remove(int key) {
-        int idx = hash(key);
-        int init_idx = idx;
-        int i = 1;
-
-        // Look for the key in the hash table using quadratic probing
-        while (!is_empty_key(table[idx].key)) {
-            if (!table[idx].deleted && table[idx].key == key) {
-                // Mark the entry as deleted and return its value
-                table[idx].deleted = true;
-                return  table[idx].value;
-            }
-            idx = next_probe(init_idx, i);
-            i++;
-        }
-
-        // Return an empty optional if the key is not found
-        return {};
+    std::optional<T> remove(K key) {
+        auto idx = find_index(key);
+        return !table[idx].is_key_empty ? [&]{
+            table[idx].deleted = true;
+            return std::optional<T>{table[idx].value};
+        }() : std::nullopt;
     }
 };
 
