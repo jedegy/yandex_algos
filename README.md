@@ -4,10 +4,11 @@
 
 
 ## Спринт 1. Введение в алгоритмы
+
+### Практические задачи
+
 <details>
-    <summary>Практические задачи</summary>
-    <details>
-        <summary>C++</summary>
+  <summary>C++</summary>
 
 - [x] [A. Значения функции](Sprint1/A/C++)
 - [x] [B. Чётные и нечётные числа](Sprint1/B/C++)
@@ -21,9 +22,10 @@
 - [x] [J. Факторизация](Sprint1/J/C++)
 - [x] [K. Списочная форма](Sprint1/K/C++)
 - [x] [L. Лишняя буква](Sprint1/L/C++)
-    </details>
-    <details>
-        <summary>Rust</summary>
+</details>
+
+<details>
+  <summary>Rust</summary>
 
 - [x] [A. Значения функции](Sprint1/A/Rust)
 - [x] [B. Чётные и нечётные числа](Sprint1/B/Rust)
@@ -37,31 +39,30 @@
 - [x] [J. Факторизация](Sprint1/J/Rust)
 - [x] [K. Списочная форма](Sprint1/K/Rust)
 - [x] [L. Лишняя буква](Sprint1/L/Rust)
-    </details>
 </details>
 
+### Финальные задачи
+
 <details>
-  <summary>Финальные задачи</summary>
-    <details>
-        <summary>C++</summary>
+  <summary>C++</summary>
 
 - [x] [A. Ближайший ноль](Sprint1%20Final/A/C++)
 - [x] [B. Ловкость рук](Sprint1%20Final/B/C++)
-    </details>
-    <details>
-        <summary>Rust</summary>
+</details>
+
+<details>
+  <summary>Rust</summary>
   
 - [ ] [A. Ближайший ноль](Sprint1%20Final/A/Rust)
 - [ ] [B. Ловкость рук](Sprint1%20Final/B/Rust)
-    </details>
 </details>
 
 ## Спринт 2. Основные структуры данных
 
+### Практические задачи
+
 <details>
-  <summary>Практические задачи</summary>
-    <details>
-        <summary>C++</summary>
+  <summary>C++</summary>
 
 - [x] [A. Мониторинг](Sprint2/A/C++)
 - [x] [B. Список дел](Sprint2/B/C++)
@@ -75,9 +76,9 @@
 - [x] [J. Списочная очередь](Sprint2/J/C++)
 - [x] [K. Рекурсивные числа Фибоначчи](Sprint2/K/C++)
 - [x] [L. Фибоначчи по модулю](Sprint2/L/C++)
-  </details>
-    <details>
-        <summary>Rust</summary>
+</details>
+<details>
+  <summary>Rust</summary>
 
 - [x] [A. Мониторинг](Sprint2/A/Rust)
 - [ ] [B. Список дел](Sprint2/B/Rust)
@@ -91,31 +92,30 @@
 - [ ] [J. Списочная очередь](Sprint2/J/Rust)
 - [ ] [K. Рекурсивные числа Фибоначчи](Sprint2/K/Rust)
 - [ ] [L. Фибоначчи по модулю](Sprint2/L/Rust)
-  </details>
 </details>
 
+### Финальные задачи
+
 <details>
-  <summary>Финальные задачи</summary>
-    <details>
-        <summary>C++</summary>
+  <summary>C++</summary>
 
 - [x] [A. Дек](Sprint2%20Final/A/C++)
 - [x] [B. Калькулятор](Sprint2%20Final/B/C++)
-    </details>
-    <details>
-        <summary>Rust</summary>
+</details>
+
+<details>
+  <summary>Rust</summary>
 
 - [ ] [A. Дек](Sprint2%20Final/A/Rust)
 - [ ] [B. Калькулятор](Sprint2%20Final/B/Rust)
-    </details>
 </details>
 
 ## Спринт 3. Рекурсия и сортировки
 
+### Практические задачи
+
 <details>
-  <summary>Практические задачи</summary>
-    <details>
-        <summary>C++</summary>
+  <summary>C++</summary>
 
 - [x] [A. Генератор скобок](Sprint3/A/C++)
 - [x] [B. Комбинации](Sprint3/B/C++)
@@ -133,9 +133,10 @@
 - [x] [N. Клумбы](Sprint3/N/C++)
 - [x] [O. Разность треш-индексов](Sprint3/O/C++)
 - [x] [P. Частичная сортировка](Sprint3/P/C++)
-    </details>
-    <details>
-        <summary>Rust</summary>
+</details>
+
+<details>
+  <summary>Rust</summary>
 
 - [ ] [A. Генератор скобок](Sprint3/A/Rust)
 - [ ] [B. Комбинации](Sprint3/B/C++)
@@ -153,31 +154,30 @@
 - [ ] [N. Клумбы](Sprint3/N/Rust)
 - [ ] [O. Разность треш-индексов](Sprint3/O/Rust)
 - [ ] [P. Частичная сортировка](Sprint3/P/Rust)
-    </details>
 </details>
 
+### Финальные задачи
+
 <details>
-  <summary>Финальные задачи</summary>
-    <details>
-        <summary>C++</summary>
+  <summary>C++</summary>
 
 - [x] [A. Поиск в сломанном массиве](Sprint3%20Final/A/C++)
 - [x] [B. Эффективная быстрая сортировка](Sprint3%20Final/B/C++)
-    </details>
-    <details>
-        <summary>Rust</summary>
+</details>
+
+<details>
+  <summary>Rust</summary>
 
 - [x] [A. Поиск в сломанном массиве](Sprint3%20Final/A/Rust)
 - [x] [B. Эффективная быстрая сортировка](Sprint3%20Final/B/Rust)
-    </details>
 </details>
 
 ## Спринт 4. Хеш-функции и хеш-таблицы
 
+### Практические задачи
+
 <details>
-  <summary>Практические задачи</summary>
-    <details>
-        <summary>C++</summary>
+  <summary>C++</summary>
 
 - [x] [A. Полиномиальный хеш](Sprint4/A/C++)
 - [x] [B. Сломай меня](Sprint4/B/C++)
@@ -191,9 +191,10 @@
 - [x] [J. Сумма четвёрок](Sprint4/J/C++)
 - [x] [K. Ближайшая остановка](Sprint4/K/C++)
 - [x] [L. МногоГоша](Sprint4/L/C++)
-    </details>
-    <details>
-        <summary>Rust</summary>
+</details>
+
+<details>
+  <summary>Rust</summary>
 
 - [x] [A. Полиномиальный хеш](Sprint4/A/Rust)
 - [x] [B. Сломай меня](Sprint4/B/Rust)
@@ -207,31 +208,30 @@
 - [x] [J. Сумма четвёрок](Sprint4/J/Rust)
 - [x] [K. Ближайшая остановка](Sprint4/K/Rust)
 - [x] [L. МногоГоша](Sprint4/L/Rust)
-  </details>
 </details>
 
+### Финальные задачи
+
 <details>
-  <summary>Финальные задачи</summary>
-    <details>
-        <summary>C++</summary>
+  <summary>C++</summary>
 
 - [x] [A. Поисковая система](Sprint4%20Final/A/C++)
 - [x] [B. Хеш-таблица](Sprint4%20Final/B/C++)
-    </details>
-    <details>
-        <summary>Rust</summary>
+</details>
+
+<details>
+  <summary>Rust</summary>
 
 - [x] [A. Поисковая система](Sprint4%20Final/A/Rust)
 - [x] [B. Хеш-таблица](Sprint4%20Final/B/Rust)
-    </details>
 </details>
 
 ## Спринт 5. Деревья
 
+### Практические задачи
+
 <details>
-  <summary>Практические задачи</summary>
-    <details>
-        <summary>C++</summary>
+  <summary>C++</summary>
 
 - [x] [A. Лампочки](Sprint5/A/C++)
 - [x] [B. Сбалансированное дерево](Sprint5/B/C++)
@@ -247,9 +247,10 @@
 - [x] [L. Просеивание вниз](Sprint5/L/C++)
 - [x] [M. Просеивание вверх](Sprint5/M/C++)
 - [x] [N. Разбиение дерева](Sprint5/N/C++)
-    </details>
-    <details>
-        <summary>Rust</summary>
+</details>
+
+<details>
+  <summary>Rust</summary>
 
 - [x] [A. Лампочки](Sprint5/A/Rust)
 - [x] [B. Сбалансированное дерево](Sprint5/B/Rust)
@@ -265,21 +266,20 @@
 - [x] [L. Просеивание вниз](Sprint5/L/Rust)
 - [x] [M. Просеивание вверх](Sprint5/M/Rust)
 - [x] [N. Разбиение дерева](Sprint5/N/Rust)
-  </details>
+</details>
+
+### Финальные задачи
+
+<details>
+  <summary>C++</summary>
+
+- [ ] [A. Пирамидальная сортировка](Sprint5%20Final/A/C++)
+- [ ] [B. Удали узел](Sprint5%20Final/B/C++)
 </details>
 
 <details>
-  <summary>Финальные задачи</summary>
-    <details>
-        <summary>C++</summary>
+  <summary>Rust</summary>
 
-- [x] [A. Пирамидальная сортировка](Sprint5%20Final/A/C++)
-- [x] [B. Удали узел](Sprint5%20Final/B/C++)
-    </details>
-    <details>
-        <summary>Rust</summary>
-
-- [x] [A. Пирамидальная сортировка](Sprint5%20Final/A/Rust)
-- [x] [B. Удали узел](Sprint5%20Final/B/Rust)
-    </details>
+- [ ] [A. Пирамидальная сортировка](Sprint5%20Final/A/Rust)
+- [ ] [B. Удали узел](Sprint5%20Final/B/Rust)
 </details>
