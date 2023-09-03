@@ -25,18 +25,18 @@
     <details>
         <summary>Rust</summary>
 
-- [ ] [A. Значения функции](Sprint1/A/Rust)
-- [ ] [B. Чётные и нечётные числа](Sprint1/B/Rust)
-- [ ] [C. Соседи](Sprint1/C/Rust)
-- [ ] [D. Хаотичность погоды](Sprint1/D/Rust)
-- [ ] [E. Самое длинное слово](Sprint1/E/Rust)
-- [ ] [F. Палиндром](Sprint1/F/Rust)
-- [ ] [G. Работа из дома](Sprint1/G/Rust)
-- [ ] [H. Двоичная система](Sprint1/H/Rust)
-- [ ] [I. Степень четырёх](Sprint1/I/Rust)
-- [ ] [J. Факторизация](Sprint1/J/Rust)
-- [ ] [K. Списочная форма](Sprint1/K/Rust)
-- [ ] [L. Лишняя буква](Sprint1/L/Rust)
+- [x] [A. Значения функции](Sprint1/A/Rust)
+- [x] [B. Чётные и нечётные числа](Sprint1/B/Rust)
+- [x] [C. Соседи](Sprint1/C/Rust)
+- [x] [D. Хаотичность погоды](Sprint1/D/Rust)
+- [x] [E. Самое длинное слово](Sprint1/E/Rust)
+- [x] [F. Палиндром](Sprint1/F/Rust)
+- [x] [G. Работа из дома](Sprint1/G/Rust)
+- [x] [H. Двоичная система](Sprint1/H/Rust)
+- [x] [I. Степень четырёх](Sprint1/I/Rust)
+- [x] [J. Факторизация](Sprint1/J/Rust)
+- [x] [K. Списочная форма](Sprint1/K/Rust)
+- [x] [L. Лишняя буква](Sprint1/L/Rust)
     </details>
 </details>
 
@@ -56,7 +56,7 @@
     </details>
 </details>
 
-#### Спринт 2. Основные структуры данных
+## Спринт 2. Основные структуры данных
 
 <details>
   <summary>Практические задачи</summary>
@@ -110,7 +110,7 @@
     </details>
 </details>
 
-#### Спринт 3. Рекурсия и сортировки
+## Спринт 3. Рекурсия и сортировки
 
 <details>
   <summary>Практические задачи</summary>
@@ -172,7 +172,7 @@
     </details>
 </details>
 
-#### Спринт 4. Хеш-функции и хеш-таблицы
+## Спринт 4. Хеш-функции и хеш-таблицы
 
 <details>
   <summary>Практические задачи</summary>
@@ -223,5 +223,63 @@
 
 - [x] [A. Поисковая система](Sprint4%20Final/A/Rust)
 - [x] [B. Хеш-таблица](Sprint4%20Final/B/Rust)
+    </details>
+</details>
+
+## Спринт 5. Деревья
+
+<details>
+  <summary>Практические задачи</summary>
+    <details>
+        <summary>C++</summary>
+
+- [x] [A. Лампочки](Sprint5/A/C++)
+- [x] [B. Сбалансированное дерево](Sprint5/B/C++)
+- [x] [C. Дерево - анаграмма](Sprint5/C/C++)
+- [x] [D. Деревья - близнецы](Sprint5/D/C++)
+- [x] [E. Дерево поиска](Sprint5/E/C++)
+- [x] [F. Максимальная глубина](Sprint5/F/C++)
+- [x] [G. Максимальный путь в дереве](Sprint5/G/C++)
+- [x] [H. Числовые пути](Sprint5/H/C++)
+- [x] [I. Разные деревья поиска](Sprint5/I/C++)
+- [x] [J. Добавь узел](Sprint5/J/C++)
+- [x] [K. Выведи диапазон](Sprint5/K/C++)
+- [x] [L. Просеивание вниз](Sprint5/L/C++)
+- [x] [M. Просеивание вверх](Sprint5/M/C++)
+- [x] [N. Разбиение дерева](Sprint5/N/C++)
+    </details>
+    <details>
+        <summary>Rust</summary>
+
+- [x] [A. Лампочки](Sprint5/A/Rust)
+- [x] [B. Сбалансированное дерево](Sprint5/B/Rust)
+- [x] [C. Дерево - анаграмма](Sprint5/C/Rust)
+- [x] [D. Деревья - близнецы](Sprint5/D/Rust)
+- [x] [E. Дерево поиска](Sprint5/E/Rust)
+- [x] [F. Максимальная глубина](Sprint5/F/Rust)
+- [x] [G. Максимальный путь в дереве](Sprint5/G/Rust)
+- [x] [H. Числовые пути](Sprint5/H/Rust)
+- [x] [I. Разные деревья поиска](Sprint5/I/Rust)
+- [x] [J. Добавь узел](Sprint5/J/Rust)
+- [x] [K. Выведи диапазон](Sprint5/K/Rust)
+- [x] [L. Просеивание вниз](Sprint5/L/Rust)
+- [x] [M. Просеивание вверх](Sprint5/M/Rust)
+- [x] [N. Разбиение дерева](Sprint5/N/Rust)
+  </details>
+</details>
+
+<details>
+  <summary>Финальные задачи</summary>
+    <details>
+        <summary>C++</summary>
+
+- [x] [A. Пирамидальная сортировка](Sprint5%20Final/A/C++)
+- [x] [B. Удали узел](Sprint5%20Final/B/C++)
+    </details>
+    <details>
+        <summary>Rust</summary>
+
+- [x] [A. Пирамидальная сортировка](Sprint5%20Final/A/Rust)
+- [x] [B. Удали узел](Sprint5%20Final/B/Rust)
     </details>
 </details>
