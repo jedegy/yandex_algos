@@ -64,37 +64,37 @@ add_executable(Sprint2_Final_B
         "Sprint2 Final/B/C++/main.cpp")
 
 add_executable(Sprint3_A
-        "Sprint3/A/C++/main.cpp")
+        Sprint3/A/C++/main.cpp)
 add_executable(Sprint3_B
-        "Sprint3/B/C++/main.cpp")
+        Sprint3/B/C++/main.cpp)
 add_executable(Sprint3_C
-        "Sprint3/C/C++/main.cpp")
+        Sprint3/C/C++/main.cpp)
 add_executable(Sprint3_D
-        "Sprint3/D/C++/main.cpp")
+        Sprint3/D/C++/main.cpp)
 add_executable(Sprint3_E
-        "Sprint3/E/C++/main.cpp")
+        Sprint3/E/C++/main.cpp)
 add_executable(Sprint3_F
-        "Sprint3/F/C++/main.cpp")
+        Sprint3/F/C++/main.cpp)
 add_executable(Sprint3_G
-        "Sprint3/G/C++/main.cpp")
+        Sprint3/G/C++/main.cpp)
 add_executable(Sprint3_H
-        "Sprint3/H/C++/main.cpp")
+        Sprint3/H/C++/main.cpp)
 add_executable(Sprint3_I
-        "Sprint3/I/C++/main.cpp")
+        Sprint3/I/C++/main.cpp)
 add_executable(Sprint3_J
-        "Sprint3/J/C++/main.cpp")
+        Sprint3/J/C++/main.cpp)
 add_executable(Sprint3_K
-        "Sprint3/K/C++/main.cpp")
+        Sprint3/K/C++/main.cpp)
 add_executable(Sprint3_L
-        "Sprint3/L/C++/main.cpp")
+        Sprint3/L/C++/main.cpp)
 add_executable(Sprint3_M
-        "Sprint3/M/C++/main.cpp")
+        Sprint3/M/C++/main.cpp)
 add_executable(Sprint3_N
-        "Sprint3/N/C++/main.cpp")
+        Sprint3/N/C++/main.cpp)
 add_executable(Sprint3_O
-        "Sprint3/O/C++/main.cpp")
+        Sprint3/O/C++/main.cpp)
 add_executable(Sprint3_P
-        "Sprint3/P/C++/main.cpp")
+        Sprint3/P/C++/main.cpp)
 
 add_executable(Sprint3_Final_A
         "Sprint3 Final/A/C++/main.cpp")
