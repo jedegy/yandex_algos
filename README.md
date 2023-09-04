@@ -273,13 +273,13 @@
 <details>
   <summary>C++</summary>
 
-- [ ] [A. Пирамидальная сортировка](Sprint5%20Final/A/C++)
-- [ ] [B. Удали узел](Sprint5%20Final/B/C++)
+- [x] [A. Пирамидальная сортировка](Sprint5%20Final/A/C++)
+- [x] [B. Удали узел](Sprint5%20Final/B/C++)
 </details>
 
 <details>
   <summary>Rust</summary>
 
-- [ ] [A. Пирамидальная сортировка](Sprint5%20Final/A/Rust)
-- [ ] [B. Удали узел](Sprint5%20Final/B/Rust)
+- [x] [A. Пирамидальная сортировка](Sprint5%20Final/A/Rust)
+- [x] [B. Удали узел](Sprint5%20Final/B/Rust)
 </details>
