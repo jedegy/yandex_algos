@@ -18,10 +18,10 @@ The time complexity for the `remove` operation is `O(h)` where `h` is the height
 This is because in the worst case, we might have to traverse from the root node to a leaf node.
 
 -- SPACE COMPLEXITY --
-The space complexity is `O(1)` for the `remove` function as it operates in-place and doesn't use any additional data
- structures.
+The space complexity of the `remove` function is `O(h)`, where `h` is the height of the tree, since the function uses
+recursive calls.
 
-Link to successful report: https://contest.yandex.ru/contest/24810/run-report/90052891/
+Link to successful report: https://contest.yandex.ru/contest/24810/run-report/90287701/
 */
 #ifndef REMOTE_JUDGE
 struct Node {
@@ -55,11 +55,9 @@ Node* remove(Node* root, int key) {
     } else {
         if (root->left == nullptr) {
             Node* temp = root->right;
-            delete root;
             return temp;
         } else if (root->right == nullptr) {
             Node* temp = root->left;
-            delete root;
             return temp;
         }
 

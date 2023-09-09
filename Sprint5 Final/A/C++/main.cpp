@@ -13,14 +13,16 @@ The `Heap::sort` function ensures that the participants are returned in sorted o
 
 -- TIME COMPLEXITY --
 1. Heap construction takes O(N) time due to the heapify operation.
-2. The `Heap::sort` function has a time complexity of O(N log N), where `N` is the number of participants.
-   This is because each heap pop operation takes O(log N) time and we perform N such operations.
+2. The `Heap::sort` function has a time complexity of O(N log N * M), where `N` is the number of participants and
+M is the length of the longest login string among those participants.
+   This is because each heap pop operation takes O(log N) time, and we perform N such operations. The comparison operation
+   in pop operation also involves the login field, which has a time complexity of O(M).
 
 -- SPACE COMPLEXITY --
 The space complexity of the program is O(N), where `N` is the number of participants.
 This is because we store all participants in a heap data structure and an additional sorted vector.
 
-Link to successful report: https://contest.yandex.ru/contest/24810/run-report/90052839/
+Link to successful report: https://contest.yandex.ru/contest/24810/run-report/90287402/
 */
 
 #include <iostream>
@@ -46,21 +48,27 @@ private:
 
     // Shifts elements down the heap to maintain heap property
     void shift_down(int idx) {
-        int left = 2 * idx + 1;
-        int right = 2 * idx + 2;
-        int idx_max = idx;
+        int idx_max;
 
-        if (left < heap.size() && heap[left] < heap[idx_max]) {
-            idx_max = left;
-        }
+        while (true) {
+            idx_max = idx;
+            int left = 2 * idx + 1;
+            int right = 2 * idx + 2;
 
-        if (right < heap.size() && heap[right] < heap[idx_max]) {
-            idx_max = right;
-        }
+            if (left < heap.size() && heap[left] < heap[idx_max]) {
+                idx_max = left;
+            }
 
-        if (idx_max != idx) {
+            if (right < heap.size() && heap[right] < heap[idx_max]) {
+                idx_max = right;
+            }
+
+            if (idx_max == idx) {
+                break;
+            }
+
             std::swap(heap[idx], heap[idx_max]);
-            shift_down(idx_max);
+            idx = idx_max;
         }
     }
 
@@ -98,8 +106,8 @@ int main() {
     std::cin >> n;
     std::vector<Participant> participants(n);
 
-    for (int i = 0; i < n; ++i) {
-        std::cin >> participants[i].login >> participants[i].tasks >> participants[i].penalty;
+    for (auto &participant : participants) {
+        std::cin >> participant.login >> participant.tasks >> participant.penalty;
     }
 
     Heap heap(participants);
