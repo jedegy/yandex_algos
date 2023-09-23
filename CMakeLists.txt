@@ -164,3 +164,8 @@ add_executable(Sprint5_Final_A
         "Sprint5 Final/A/C++/main.cpp")
 add_executable(Sprint5_Final_B
         "Sprint5 Final/B/C++/main.cpp")
+
+add_executable(Sprint6_Final_A
+        "Sprint6 Final/A/C++/main.cpp")
+add_executable(Sprint6_Final_B
+        "Sprint6 Final/B/C++/main.cpp")
