@@ -283,3 +283,57 @@
 - [x] [A. Пирамидальная сортировка](Sprint5%20Final/A/Rust)
 - [x] [B. Удали узел](Sprint5%20Final/B/Rust)
 </details>
+
+## Спринт 6. Графы
+
+### Практические задачи
+
+<details>
+  <summary>C++</summary>
+
+- [x] [A. Построить список смежности](Sprint5/A/C++)
+- [x] [B. Перевести список ребер в матрицу смежности](Sprint5/B/C++)
+- [x] [C. DFS](Sprint5/C/C++)
+- [x] [D. BFS](Sprint5/D/C++)
+- [x] [E. Компоненты связности](Sprint5/E/C++)
+- [x] [F. Расстояние между вершинами](Sprint5/F/C++)
+- [x] [G. Максимальное расстояние](Sprint5/G/C++)
+- [x] [H. Время выходить](Sprint5/H/C++)
+- [x] [J. Топологическая сортировка](Sprint5/J/C++)
+- [x] [K. Достопримечательности](Sprint5/K/C++)
+- [x] [L. Полный граф](Sprint5/L/C++)
+- [x] [M. Проверка на двудольность](Sprint5/M/C++)
+</details>
+
+<details>
+  <summary>Rust</summary>
+
+- [x] [A. Построить список смежности](Sprint5/A/Rust)
+- [x] [B. Перевести список ребер в матрицу смежности](Sprint5/B/Rust)
+- [x] [C. DFS](Sprint5/C/Rust)
+- [x] [D. BFS](Sprint5/D/Rust)
+- [x] [E. Компоненты связности](Sprint5/E/Rust)
+- [x] [F. Расстояние между вершинами](Sprint5/F/Rust)
+- [x] [G. Максимальное расстояние](Sprint5/G/Rust)
+- [x] [H. Время выходить](Sprint5/H/Rust)
+- [x] [J. Топологическая сортировка](Sprint5/J/Rust)
+- [x] [K. Достопримечательности](Sprint5/K/Rust)
+- [x] [L. Полный граф](Sprint5/L/Rust)
+- [x] [M. Проверка на двудольность](Sprint5/M/Rust)
+</details>
+
+### Финальные задачи
+
+<details>
+  <summary>C++</summary>
+
+- [x] [A. Дорогая сеть](Sprint6%20Final/A/C++)
+- [x] [B. Железные дороги](Sprint6%20Final/B/C++)
+</details>
+
+<details>
+  <summary>Rust</summary>
+
+- [x] [A. Дорогая сеть](Sprint6%20Final/A/Rust)
+- [x] [B. Железные дороги](Sprint6%20Final/B/Rust)
+</details>
