@@ -15,7 +15,7 @@ The program correctly computes the weight of the Maximum Spanning Tree using the
 If any vertex is not included in the MST, the program concludes that the graph is not connected, thus a spanning tree is not possible.
 
 -- TIME COMPLEXITY --
-The time complexity of the modified Prim’s algorithm is O((V + E) log V), where V is the number of vertices, and E is the number of edges.
+The time complexity of the modified Prim’s algorithm is O(E log E + V), where V is the number of vertices, and E is the number of edges.
 
 -- SPACE COMPLEXITY --
 The space complexity of the program is O(V + E) due to the storage required for the graph representation, visited array, and priority_queue.
@@ -71,10 +71,8 @@ std::optional<int> find_weight_MST(const std::vector<std::vector<Edge>>& graph) 
     }
 
     // Check if all vertices are included in the MST.
-    for (int i = 1; i < visited.size(); i++) {
-        // If any vertex is not visited, return `nullopt` indicating the graph is not connected.
-        if (!visited[i])
-            return std::nullopt;
+    if (!std::all_of(visited.begin() + 1, visited.end(), [](bool v){ return v; })) {
+        return std::nullopt;
     }
 
     // Return the weight of the Maximum Spanning Tree.
