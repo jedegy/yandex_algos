@@ -194,3 +194,34 @@ add_executable(Sprint6_Final_A
         "Sprint6 Final/A/C++/main.cpp")
 add_executable(Sprint6_Final_B
         "Sprint6 Final/B/C++/main.cpp")
+
+add_executable(Sprint7_A
+        Sprint7/A/C++/main.cpp)
+add_executable(Sprint7_B
+        Sprint7/B/C++/main.cpp)
+add_executable(Sprint7_C
+        Sprint7/C/C++/main.cpp)
+add_executable(Sprint7_D
+        Sprint7/D/C++/main.cpp)
+add_executable(Sprint7_E
+        Sprint7/E/C++/main.cpp)
+add_executable(Sprint7_F
+        Sprint7/F/C++/main.cpp)
+add_executable(Sprint7_G
+        Sprint7/G/C++/main.cpp)
+add_executable(Sprint7_H
+        Sprint7/H/C++/main.cpp)
+add_executable(Sprint7_I
+        Sprint7/I/C++/main.cpp)
+add_executable(Sprint7_J
+        Sprint7/J/C++/main.cpp)
+add_executable(Sprint7_K
+        Sprint7/K/C++/main.cpp)
+add_executable(Sprint7_L
+        Sprint7/L/C++/main.cpp)
+add_executable(Sprint7_M
+        Sprint7/M/C++/main.cpp)
+add_executable(Sprint7_N
+        Sprint7/N/C++/main.cpp)
+add_executable(Sprint7_O
+        Sprint7/O/C++/main.cpp)

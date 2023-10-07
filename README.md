@@ -291,35 +291,35 @@
 <details>
   <summary>C++</summary>
 
-- [x] [A. Построить список смежности](Sprint5/A/C++)
-- [x] [B. Перевести список ребер в матрицу смежности](Sprint5/B/C++)
-- [x] [C. DFS](Sprint5/C/C++)
-- [x] [D. BFS](Sprint5/D/C++)
-- [x] [E. Компоненты связности](Sprint5/E/C++)
-- [x] [F. Расстояние между вершинами](Sprint5/F/C++)
-- [x] [G. Максимальное расстояние](Sprint5/G/C++)
-- [x] [H. Время выходить](Sprint5/H/C++)
-- [x] [J. Топологическая сортировка](Sprint5/J/C++)
-- [x] [K. Достопримечательности](Sprint5/K/C++)
-- [x] [L. Полный граф](Sprint5/L/C++)
-- [x] [M. Проверка на двудольность](Sprint5/M/C++)
+- [x] [A. Построить список смежности](Sprint6/A/C++)
+- [x] [B. Перевести список ребер в матрицу смежности](Sprint6/B/C++)
+- [x] [C. DFS](Sprint6/C/C++)
+- [x] [D. BFS](Sprint6/D/C++)
+- [x] [E. Компоненты связности](Sprint6/E/C++)
+- [x] [F. Расстояние между вершинами](Sprint6/F/C++)
+- [x] [G. Максимальное расстояние](Sprint6/G/C++)
+- [x] [H. Время выходить](Sprint6/H/C++)
+- [x] [J. Топологическая сортировка](Sprint6/J/C++)
+- [x] [K. Достопримечательности](Sprint6/K/C++)
+- [x] [L. Полный граф](Sprint6/L/C++)
+- [x] [M. Проверка на двудольность](Sprint6/M/C++)
 </details>
 
 <details>
   <summary>Rust</summary>
 
-- [x] [A. Построить список смежности](Sprint5/A/Rust)
-- [x] [B. Перевести список ребер в матрицу смежности](Sprint5/B/Rust)
-- [x] [C. DFS](Sprint5/C/Rust)
-- [x] [D. BFS](Sprint5/D/Rust)
-- [x] [E. Компоненты связности](Sprint5/E/Rust)
-- [x] [F. Расстояние между вершинами](Sprint5/F/Rust)
-- [x] [G. Максимальное расстояние](Sprint5/G/Rust)
-- [x] [H. Время выходить](Sprint5/H/Rust)
-- [x] [J. Топологическая сортировка](Sprint5/J/Rust)
-- [x] [K. Достопримечательности](Sprint5/K/Rust)
-- [x] [L. Полный граф](Sprint5/L/Rust)
-- [x] [M. Проверка на двудольность](Sprint5/M/Rust)
+- [x] [A. Построить список смежности](Sprint6/A/Rust)
+- [x] [B. Перевести список ребер в матрицу смежности](Sprint6/B/Rust)
+- [x] [C. DFS](Sprint6/C/Rust)
+- [x] [D. BFS](Sprint6/D/Rust)
+- [x] [E. Компоненты связности](Sprint6/E/Rust)
+- [x] [F. Расстояние между вершинами](Sprint6/F/Rust)
+- [x] [G. Максимальное расстояние](Sprint6/G/Rust)
+- [x] [H. Время выходить](Sprint6/H/Rust)
+- [x] [J. Топологическая сортировка](Sprint6/J/Rust)
+- [x] [K. Достопримечательности](Sprint6/K/Rust)
+- [x] [L. Полный граф](Sprint6/L/Rust)
+- [x] [M. Проверка на двудольность](Sprint6/M/Rust)
 </details>
 
 ### Финальные задачи
@@ -336,4 +336,48 @@
 
 - [x] [A. Дорогая сеть](Sprint6%20Final/A/Rust)
 - [x] [B. Железные дороги](Sprint6%20Final/B/Rust)
+</details>
+
+## Спринт 7. Жадные алгоритмы и динамическое программирование
+
+### Практические задачи
+
+<details>
+  <summary>C++</summary>
+
+- [x] [A. Биржа](Sprint7/A/C++)
+- [x] [B. Расписание](Sprint7/B/C++)
+- [x] [C. Золотая лихорадка](Sprint7/C/C++)
+- [x] [D. Числа Фибоначчи для взрослых](Sprint7/D/C++)
+- [x] [E. Алла на Алгосах](Sprint7/E/C++)
+- [x] [F. Прыжки по лестнице](Sprint7/F/C++)
+- [x] [G. Банкомат](Sprint7/G/C++)
+- [x] [H. Поле с цветочками](Sprint7/H/C++)
+- [x] [I. Сложное поле с цветочками](Sprint7/I/C++)
+- [x] [J. Путешествие](Sprint7/J/C++)
+- [x] [K. Гороскопы](Sprint7/K/C++)
+- [x] [L. Золото лепреконов](Sprint7/L/C++)
+- [x] [M. Рюкзак](Sprint7/M/C++)
+- [x] [N. Гоша в ресторане](Sprint7/N/C++)
+- [x] [O. Количество путей](Sprint7/O/C++)
+</details>
+
+<details>
+  <summary>Rust</summary>
+
+- [x] [A. Биржа](Sprint7/A/Rust)
+- [x] [B. Расписание](Sprint7/B/Rust)
+- [x] [C. Золотая лихорадка](Sprint7/C/Rust)
+- [x] [D. Числа Фибоначчи для взрослых](Sprint7/D/Rust)
+- [x] [E. Алла на Алгосах](Sprint7/E/Rust)
+- [x] [F. Прыжки по лестнице](Sprint7/F/Rust)
+- [x] [G. Банкомат](Sprint7/G/Rust)
+- [x] [H. Поле с цветочками](Sprint7/H/Rust)
+- [x] [I. Сложное поле с цветочками](Sprint7/I/Rust)
+- [x] [J. Путешествие](Sprint7/J/Rust)
+- [x] [K. Гороскопы](Sprint7/K/Rust)
+- [x] [L. Золото лепреконов](Sprint7/L/Rust)
+- [x] [M. Рюкзак](Sprint7/M/Rust)
+- [x] [N. Гоша в ресторане](Sprint7/N/Rust)
+- [x] [O. Количество путей](Sprint7/O/Rust)
 </details>
