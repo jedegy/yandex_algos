@@ -381,3 +381,19 @@
 - [x] [N. Гоша в ресторане](Sprint7/N/Rust)
 - [x] [O. Количество путей](Sprint7/O/Rust)
 </details>
+
+### Финальные задачи
+
+<details>
+  <summary>C++</summary>
+
+- [x] [A. Расстояние по Левенштейну](Sprint7%20Final/A/C++)
+- [x] [B. Одинаковые суммы](Sprint7%20Final/B/C++)
+</details>
+
+<details>
+  <summary>Rust</summary>
+
+- [x] [A. Расстояние по Левенштейну](Sprint7%20Final/A/Rust)
+- [x] [B. Одинаковые суммы](Sprint7%20Final/B/Rust)
+</details>

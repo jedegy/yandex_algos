@@ -225,3 +225,8 @@ add_executable(Sprint7_N
         Sprint7/N/C++/main.cpp)
 add_executable(Sprint7_O
         Sprint7/O/C++/main.cpp)
+
+add_executable(Sprint7_Final_A
+        "Sprint7 Final/A/C++/main.cpp")
+add_executable(Sprint7_Final_B
+        "Sprint7 Final/B/C++/main.cpp")
