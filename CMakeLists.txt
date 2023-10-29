@@ -255,3 +255,8 @@ add_executable(Sprint8_K
         Sprint8/K/C++/main.cpp)
 add_executable(Sprint8_L
         Sprint8/L/C++/main.cpp)
+
+add_executable(Sprint8_Final_A
+        "Sprint8 Final/A/C++/main.cpp")
+add_executable(Sprint8_Final_B
+        "Sprint8 Final/B/C++/main.cpp")

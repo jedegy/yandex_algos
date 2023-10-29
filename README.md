@@ -435,3 +435,19 @@
 - [x] [K. Сравнить две строки](Sprint8/K/Rust)
 - [x] [L. Подсчёт префикс-функции](Sprint8/L/Rust)
 </details>
+
+### Финальные задачи
+
+<details>
+  <summary>C++</summary>
+
+- [x] [A. Packed Prefix](Sprint8%20Final/A/C++)
+- [x] [B. Шпаргалка](Sprint8%20Final/B/C++)
+</details>
+
+<details>
+  <summary>Rust</summary>
+
+- [x] [A. Packed Prefix](Sprint8%20Final/A/Rust)
+- [x] [B. Шпаргалка](Sprint8%20Final/B/Rust)
+</details>
