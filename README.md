@@ -397,3 +397,41 @@
 - [x] [A. Расстояние по Левенштейну](Sprint7%20Final/A/Rust)
 - [x] [B. Одинаковые суммы](Sprint7%20Final/B/Rust)
 </details>
+
+## Спринт 8. Алгоритмы на строках
+
+### Практические задачи
+
+<details>
+  <summary>C++</summary>
+
+- [x] [A. Разворот строки](Sprint8/A/C++)
+- [x] [B. Пограничный контроль](Sprint8/B/C++)
+- [x] [C. Самый длинный палиндром 2](Sprint8/C/C++)
+- [x] [D. Общий префикс](Sprint8/D/C++)
+- [x] [E. Вставка строк](Sprint8/E/C++)
+- [x] [F. Частое слово](Sprint8/F/C++)
+- [x] [G. Поиск со сдвигом](Sprint8/G/C++)
+- [x] [H. Глобальная замена](Sprint8/H/C++)
+- [x] [I. Повтор](Sprint8/I/C++)
+- [x] [J. Случай верблюда](Sprint8/J/C++)
+- [x] [K. Сравнить две строки](Sprint8/K/C++)
+- [x] [L. Подсчёт префикс-функции](Sprint8/L/C++)
+</details>
+
+<details>
+  <summary>Rust</summary>
+
+- [x] [A. Разворот строки](Sprint8/A/Rust)
+- [x] [B. Пограничный контроль](Sprint8/B/Rust)
+- [x] [C. Самый длинный палиндром 2](Sprint8/C/Rust)
+- [x] [D. Общий префикс](Sprint8/D/Rust)
+- [x] [E. Вставка строк](Sprint8/E/Rust)
+- [x] [F. Частое слово](Sprint8/F/Rust)
+- [x] [G. Поиск со сдвигом](Sprint8/G/Rust)
+- [x] [H. Глобальная замена](Sprint8/H/Rust)
+- [x] [I. Повтор](Sprint8/I/Rust)
+- [x] [J. Случай верблюда](Sprint8/J/Rust)
+- [x] [K. Сравнить две строки](Sprint8/K/Rust)
+- [x] [L. Подсчёт префикс-функции](Sprint8/L/Rust)
+</details>

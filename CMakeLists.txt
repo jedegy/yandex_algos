@@ -230,3 +230,28 @@ add_executable(Sprint7_Final_A
         "Sprint7 Final/A/C++/main.cpp")
 add_executable(Sprint7_Final_B
         "Sprint7 Final/B/C++/main.cpp")
+
+add_executable(Sprint8_A
+        Sprint8/A/C++/main.cpp)
+add_executable(Sprint8_B
+        Sprint8/B/C++/main.cpp)
+add_executable(Sprint8_C
+        Sprint8/C/C++/main.cpp)
+add_executable(Sprint8_D
+        Sprint8/D/C++/main.cpp)
+add_executable(Sprint8_E
+        Sprint8/E/C++/main.cpp)
+add_executable(Sprint8_F
+        Sprint8/F/C++/main.cpp)
+add_executable(Sprint8_G
+        Sprint8/G/C++/main.cpp)
+add_executable(Sprint8_H
+        Sprint8/H/C++/main.cpp)
+add_executable(Sprint8_I
+        Sprint8/I/C++/main.cpp)
+add_executable(Sprint8_J
+        Sprint8/J/C++/main.cpp)
+add_executable(Sprint8_K
+        Sprint8/K/C++/main.cpp)
+add_executable(Sprint8_L
+        Sprint8/L/C++/main.cpp)
